@@ -64,3 +64,22 @@ body {
 #next {
   right: 15%;
 }
+
+@media (max-width: 420px) {
+  .image-container span img {
+    width: 150px;
+    margin-left: 20px;
+  }
+
+  .image-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(230px);
+  }
+
+  #prev {
+    left: 3%;
+  }
+}
